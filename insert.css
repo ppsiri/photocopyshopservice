@@ -1,0 +1,141 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Maitree', serif;
+  font-weight:bold;
+  background-image: linear-gradient(to bottom left, rgb(236, 158, 90), rgb(255, 255, 255));
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0;
+  padding-left:0; 
+}
+
+.container > * {
+  padding: 10px;
+}
+
+.header { 
+  flex: 1 100%;
+  height: 25px;
+  font-size: 28px;
+  height: auto !important;
+}
+
+.main { 
+  flex: 1;
+}
+.main label{
+  color: rgb(63, 63, 63);
+}
+.main1{
+  flex: 1.5;
+  
+}
+.sidebar { 
+  flex: 1.5;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+.button {
+  background-color: rgb(245, 188, 137); 
+  color: rgb(255, 255, 255);
+  padding: 2px 15px;
+  border: 0.5px solid rgb(173, 116, 78);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.button:hover {
+  background-color: rgb(199, 132, 70);
+  color: white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px  black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 15px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px  black;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}

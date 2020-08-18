@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Maitree', serif;
+  font-weight:bold;
+  
+}body {
+  background-image: url("Web.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 550px;
+}
+.button {
+  
+  padding: 2px 15px;
+  border: 0.5px solid rgb(173, 116, 78);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-animation: mymove 2s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {background-color: rgb(245, 188, 137); }
+  to {background-color: rgb(255, 255, 255); ;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {background-color: rgb(245, 188, 137); }
+  to {background-color: rgb(255, 255, 255); ;}
+}
+  
+.An {
+  width: 20px;
+  height: 5px;
+  background: rgb(119, 30, 30);
+  position: relative;
+  -webkit-animation: aa 10s infinite; /* Safari 4.0 - 8.0 */
+  animation: aa 10s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes aa {
+  from {left: 0px;}
+  to {left: 1345px;}
+}
+
+@keyframes aa {
+  from {left: 0px;}
+  to {left: 1345px;}
+}
+
+.button:hover {
+  background-color: rgb(199, 132, 70);
+  color: rgb(218, 45, 68);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px  black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

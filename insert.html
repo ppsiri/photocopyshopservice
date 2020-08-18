@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Database</title>
+    <link rel="stylesheet" href="insert.css">
+    <link href="https://fonts.googleapis.com/css?family=Maitree&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="container">
+        <header class="header">
+            ระบุข้อมูลผู้ที่มาใช้บริการ
+        </header>
+        <aside class="sidebar">
+        </aside>
+        <section class="main">
+            <table>
+                <form action="/action_page.php">
+                    
+                    <label for="lname">วันที่ใช้บริการ</label>
+                    <input type="text"placeholder="Date..">
+
+                    <label for="country">คำนำหน้าชื่อ</label>
+                    <select id="country" name="country">
+                        <option value="print">นาย</option>
+                        <option value="tay">นาง</option>
+                        <option value="tay">นางสาว</option>
+                    </select>
+
+                    <label for="fname">ชื่อ</label>
+                    <input type="text" placeholder="Your name..">
+
+                    <label for="lname">นามสกุล</label>
+                    <input type="text" placeholder="Your last name..">
+
+                    <label for="major">สาขา</label>
+                    <input type="text"placeholder="Your major...">
+
+                    <label for="country">มาใช้บริการด้าน</label>
+                    <select id="country" name="country">
+                        <option value="print">ปริ๊นงาน</option>
+                        <option value="tay">ถ่ายเอกสาร</option>
+                    </select>
+
+                    <label for="country">ผู้ให้บริการ</label>
+                    <select id="country" name="country">
+                        <option value="print">นางสาว อติภา นงนุกูลชัย</option>
+                    </select>
+                
+                   
+            </form> 
+            <div class="tooltip">
+            <button class="button" onclick = "window.location.href='copy.php'">บันทึก</button>
+            <span class="tooltiptext">บันทึกข้อมูล</span>
+        </div>
+        <div class="tooltip1">
+            <button class="button" onclick = "window.location.href='copy.php'">ยกเลิก</button>  
+            <span class="tooltiptext1">ยกเลิกการบันทึกข้อมูล</span>
+        </div>
+        </table>
+        </section>
+        <section class="main1">
+        </section>
+    </div>
+ 
+</body>
+
+</html>
